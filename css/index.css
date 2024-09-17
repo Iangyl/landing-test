@@ -21,7 +21,9 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+  color: white;
   background: #000;
+  overflow: hidden;
 }
 
 button {
@@ -39,7 +41,68 @@ ul {
 }
 
 .header {
+  width: 100%;
   padding: 20px 0;
   background-color: var(--header-bg-col);
   border-bottom: 1px solid var(--header-border-col);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  max-width: 188.42px;
+  max-height: 42px;
+  width: 9.814vw;
+}
+
+.banner {
+  position: relative;
+  height: 834px;
+}
+
+.banner-image {
+  position: absolute;
+  top: 10%;
+  left: -25%;
+  z-index: -2;
+}
+
+.solana-logo {
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.invocation-block {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 202px;
+}
+
+.invocation-block h1 {
+  font-size: 4.25rem;
+  font-weight: 500;
+  line-height: 81.6px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.invocation-block p {
+  font-size: 1.375rem;
+  line-height: 33px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.invocation-block p span {
+  font-weight: 500;
+}
+
+.invocation-block h1,
+.invocation-block p {
+  margin-bottom: 50px;
 }
