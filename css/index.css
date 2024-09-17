@@ -8,6 +8,11 @@
   --border-primary-col: #A962FF;
   --border-secondary-col: white;
 
+  --indicator-col: #9945FF;
+
+  --header-bg-col: #000000;
+  --header-border-col: rgb(255, 255, 255, 0.15);
+
   --btn-bg-def: linear-gradient(98.88deg, #8C01FA -2.99%, #18002B 102.28%);
   --btn-bg-hov: linear-gradient(98.88deg, #8C01FA -2.99%, #8C01FA 102.28%);
   --btn-bg-press: linear-gradient(98.88deg, #18002B -2.99%, #18002B 102.28%);
@@ -31,4 +36,10 @@ ul {
   max-width: 1180px;
   width: 100%;
   margin: 0 auto;
+}
+
+.header {
+  padding: 20px 0;
+  background-color: var(--header-bg-col);
+  border-bottom: 1px solid var(--header-border-col);
 }

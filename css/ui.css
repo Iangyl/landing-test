@@ -59,6 +59,7 @@
 .navigation {}
 
 .navigation__nav-item {
+  position: relative;
   font-size: 1.125rem;
   color: var(--tertiary-col);
   line-height: 27px;
@@ -68,6 +69,22 @@
 .navigation__nav-item:hover {
   color: var(--primary-col);
   cursor: pointer;
+}
+
+.navigation__nav-item::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 6px;
+  max-width: 6px;
+  width: 0;
+  border-radius: 50%;
+  background-color: var(--indicator-col);
+  left: -10.5px;
+}
+
+.navigation__nav-item_link_active::before {
+  width: 100%;
 }
 
 /* arrow */

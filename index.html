@@ -6,41 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Platform</title>
   <link rel='icon' type='image/x-icon' href='/public/favicon.ico' />
+  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel='stylesheet' href='/css/normalize.css' />
   <link rel='stylesheet' href='/css/index.css' />
   <link rel='stylesheet' href='/css/mixins.css' />
   <link rel='stylesheet' href='/css/ui.css' />
-  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <div class='content-wrapper'>
-      <div></div>
-      <nav>
+  <header class='header'>
+    <div class='content-wrapper flex-yCenter-xBetween'>
+      <div class='header-logo'>
+        <a href='/'>
+          <img src='/assets/pictures/logo.png' alt='platform' />
+        </a>
+      </div>
+      <nav id='navigation'>
         <ul class='flex-yCenter-gap' style='--gap: 30px'>
           <li>
-            <a class='flex-yCenter navigation__nav-item'>
+            <a href='/' class='flex-yCenter navigation__nav-item'>
               <span>Home</span>
             </a>
           </li>
           <li>
-            <a class='flex-yCenter navigation__nav-item'>
+            <a href='/about' class='flex-yCenter navigation__nav-item'>
               <span>About</span>
             </a>
           </li>
           <li>
-            <a class='flex-yCenter navigation__nav-item'>
+            <a href='/advantages' class='flex-yCenter navigation__nav-item'>
               <span>Advantages</span>
             </a>
           </li>
           <li>
-            <a class='flex-yCenter navigation__nav-item'>
+            <a href='/why-us' class='flex-yCenter navigation__nav-item'>
               <span>Why us</span>
             </a>
           </li>
-          <li></li>
-          <li></li>
+          <li>
+            <button id='howBtn' class='flex-yCenter secondary-button secondary-button_border-color_primary'>
+              <span>Know-Hows</span>
+            </button>
+          </li>
+          <li>
+            <button id='instructionBtn' class='flex-yCenter secondary-button secondary-button_border-color_secondary'>
+              <span>Instructions</span>
+            </button>
+          </li>
         </ul>
       </nav>
     </div>
