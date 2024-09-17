@@ -1,0 +1,80 @@
+/* Here you can search for different classes of ui elements */
+/*
+  # Content
+
+  1. primary button
+  2. secondary button
+  3. navigation
+    - arrow
+*/
+
+/* ============ primary button ============ */
+
+.primary-button {
+  padding: 16px 32px 16px 32px;
+  border-radius: 50px;
+  background: var(--btn-bg-def);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 27px;
+  color: var(--primary-col);
+  text-transform: uppercase;
+}
+
+.primary-button:hover {
+  background: var(--btn-bg-hov);
+  cursor: pointer;
+}
+
+.primary-button:active {
+  background: var(--btn-bg-press);
+  color: var(--tertiary-col);
+}
+
+/* ============ secondary button ============ */
+
+.secondary-button {
+  padding: 6px 12px 6px 12px;
+  font-size: 1.125rem;
+  color: var(--primary-col);
+  line-height: 27px;
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+.secondary-button:hover {
+  cursor: pointer;
+}
+
+.secondary-button_border-color_primary {
+  border: 1px solid var(--border-primary-col);
+}
+
+.secondary-button_border-color_secondary {
+  border: 1px solid var(--border-secondary-col);
+}
+
+/* ============ navigation ============ */
+
+.navigation {}
+
+.navigation__nav-item {
+  font-size: 1.125rem;
+  color: var(--tertiary-col);
+  line-height: 27px;
+  text-decoration: none;
+}
+
+.navigation__nav-item:hover {
+  color: var(--primary-col);
+}
+
+/* arrow */
+
+.arrow-nav-icon {
+  fill: var(--tertiary-col);
+}
+
+.navigation__nav-item:hover .arrow-nav-icon {
+  fill: var(--primary-col);
+}

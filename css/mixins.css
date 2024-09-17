@@ -1,0 +1,16 @@
+.flex-xCenter-yCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-yCenter {
+  display: flex;
+  align-items: center;
+}
+
+.flex-yCenter-gap {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
