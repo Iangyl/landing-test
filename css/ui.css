@@ -67,6 +67,7 @@
 
 .navigation__nav-item:hover {
   color: var(--primary-col);
+  cursor: pointer;
 }
 
 /* arrow */
@@ -77,4 +78,5 @@
 
 .navigation__nav-item:hover .arrow-nav-icon {
   fill: var(--primary-col);
+  cursor: pointer;
 }
