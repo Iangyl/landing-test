@@ -15,8 +15,10 @@
   --v-indicator-green-col: #19FB9B;
 
   --header-bg-col: #000000;
+  --icon-bg-col: #111111;
   --border-col: rgba(255, 255, 255, 0.15);
   --bg-dark-30-col: rgba(0, 0, 0, 0.3);
+  --bg-dark-60-col: rgba(0, 0, 0, 0.6);
 
   --btn-bg-def: linear-gradient(98.88deg, #8C01FA -2.99%, #18002B 102.28%);
   --btn-bg-hov: linear-gradient(98.88deg, #8C01FA -2.99%, #8C01FA 102.28%);
@@ -47,6 +49,12 @@ h2 {
 h3 {
   font-size: 1.75rem;
   line-height: 33.6px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 27px;
 }
 
 button {
@@ -271,6 +279,7 @@ ul {
 .advantages-item-container h3 {
   padding-left: 17px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .advantages-item-container h3::before {
@@ -308,4 +317,82 @@ ul {
 
 .advantages-item-container p span {
   font-weight: 500;
+}
+
+
+/* why us */
+
+.why-us {
+  position: relative;
+}
+
+.why-us-bg {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+.planet {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.why-us h2 {
+  margin-bottom: 10px;
+}
+
+.why-us .description {
+  margin-bottom: 50px;
+  color: var(--secondary-col);
+  font-size: 1.375rem;
+}
+
+.why-us-item-container {
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid var(--border-col);
+  background-color: var(--bg-dark-60-col);
+}
+
+.why-us-item-container:nth-child(1),
+.why-us-item-container:nth-child(2) {
+  max-width: 518px;
+  width: 100%;
+  height: 329px;
+}
+
+.why-us-item-container:nth-child(3) {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.why-us-icon-container {
+  background-color: var(--icon-bg-col);
+  border-radius: 10px;
+  padding: 5px;
+  height: 50px;
+}
+
+.why-us-item-title {
+  margin-bottom: 20px;
+}
+
+.why-us-item-container p {
+  font-size: 1.125rem;
+  color: var(--secondary-col);
+}
+
+.why-us-item-container p span {
+  font-weight: 500;
+}
+
+.why-us-item-container:last-of-type p {
+  text-align: center;
+  height: 135px;
 }
