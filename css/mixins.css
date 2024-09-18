@@ -22,3 +22,9 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.flex-yCenter-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

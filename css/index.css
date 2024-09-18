@@ -11,19 +11,37 @@
   --indicator-col: #9945FF;
 
   --header-bg-col: #000000;
-  --header-border-col: rgb(255, 255, 255, 0.15);
+  --border-col: rgb(255, 255, 255, 0.15);
 
   --btn-bg-def: linear-gradient(98.88deg, #8C01FA -2.99%, #18002B 102.28%);
   --btn-bg-hov: linear-gradient(98.88deg, #8C01FA -2.99%, #8C01FA 102.28%);
   --btn-bg-press: linear-gradient(98.88deg, #18002B -2.99%, #18002B 102.28%);
 }
 
-body {
+html {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: white;
+}
+
+body {
   background: #000;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+h2, h3 {
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 57.6px;
+  letter-spacing: -2;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 33.6px;
 }
 
 button {
@@ -44,7 +62,7 @@ ul {
   width: 100%;
   padding: 20px 0;
   background-color: var(--header-bg-col);
-  border-bottom: 1px solid var(--header-border-col);
+  border-bottom: 1px solid var(--border-col);
   position: fixed;
   top: 0;
   z-index: 100;
@@ -105,4 +123,80 @@ ul {
 .invocation-block h1,
 .invocation-block p {
   margin-bottom: 50px;
+}
+
+.about {
+  position: relative;
+  margin-top: 142px;
+  margin-bottom: 170px;
+  padding: 54px 0;
+}
+
+.about__text-container {
+  max-width: 550px;
+  width: 100%;
+}
+
+.about__text-container h2 {
+  margin-bottom: 50px;
+}
+
+.about__text-container h3 {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 10.5px;
+}
+
+.about__text-container h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 6px;
+  max-width: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: var(--indicator-col);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about__text-container p {
+  font-size: 1.375rem;
+  line-height: 33px;
+  color: var(--secondary-col);
+}
+
+.about__text-container p span {
+  font-weight: 500;
+}
+
+.about__pic-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about__pic-container img {
+  border-radius: 30px 0px 0px 30px;
+  border: 1px 0px 1px 1px var(--border-col);
+}
+
+.advantages {}
+
+.advantages h2 {
+  margin-bottom: 50px;
+}
+
+.advantages div div h3 {}
+
+.advantages div div h3::before {}
+
+.advantages div div p {
+  font-size: 1.125rem;
+}
+
+.advantages div div p span {
+  font-weight: 500;
 }
