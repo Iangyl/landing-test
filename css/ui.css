@@ -19,6 +19,7 @@
   line-height: 27px;
   color: var(--primary-col);
   text-transform: uppercase;
+  letter-spacing: 3%;
 }
 
 .primary-button:hover {
