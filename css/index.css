@@ -431,3 +431,21 @@ ul {
   line-height: 33px;
   margin-bottom: 30px;
 }
+
+/* footer */
+
+footer {
+  margin-top: 270px;
+  padding: 20px 0;
+}
+
+.footer-copyright {
+  font-size: 1.125rem;
+  line-height: 27px;
+  text-align: center;
+  color: var(--tertiary-col)
+}
+
+.footer-social-icons {
+  margin-top: 20px;
+}

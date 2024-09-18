@@ -5,6 +5,13 @@
   justify-content: center;
 }
 
+.flex-yCenter-xCenter-gap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+}
+
 .flex-yCenter {
   display: flex;
   align-items: center;
