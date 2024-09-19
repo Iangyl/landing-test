@@ -33,6 +33,9 @@ html {
 
 body {
   background: #000;
+}
+
+html, body {
   overflow-x: hidden;
 }
 
@@ -64,6 +67,10 @@ p {
 
 button {
   border: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 ul {
@@ -448,4 +455,17 @@ footer {
 
 .footer-social-icons {
   margin-top: 20px;
+}
+
+@media (max-width: 425px) {
+  .content-wrapper {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    max-width: 134.4px;
+    width: 37.333vw;
+  }
 }

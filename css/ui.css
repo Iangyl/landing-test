@@ -6,6 +6,8 @@
   2. secondary button
   3. navigation
     - arrow
+    - burger
+  4. media query
 */
 
 /* ============ primary button ============ */
@@ -57,8 +59,6 @@
 
 /* ============ navigation ============ */
 
-.navigation {}
-
 .navigation__nav-item {
   position: relative;
   font-size: 1.125rem;
@@ -97,4 +97,47 @@
 .navigation__nav-item:hover .arrow-nav-icon {
   fill: var(--primary-col);
   cursor: pointer;
+}
+
+/* burger */
+
+.burger-button {
+  height: 40px;
+  background-color: transparent;
+  padding: 0;
+}
+
+.burger-button_visibility_hidden {
+  display: none;
+}
+
+.burger-button_visibility_visible {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  #navigation {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--header-bg-col);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .burger-button {
+    display: flex;
+  }
+
+  .navigation__nav-item {
+    padding: 10px 0;
+  }
+
+  #navigation.active {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

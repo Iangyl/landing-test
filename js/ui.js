@@ -97,7 +97,63 @@ function addSocialIconsToFooter() {
     .append(telegram);
 }
 
+function addBurgerOnMobileWidth() {
+  const burgerButton = `
+    <button id='burgerButton' class='burger-button flex-xCenter-yCenter burger-button_visibility_hidden'>
+    </button>
+  `;
+
+  const openBurgerMenu = `
+    <svg id='openBurgerMenu' width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="44" height="40" rx="10" fill="#fff" fill-opacity=".15"/><rect x=".5" y=".5" width="43" height="39" rx="9.5" stroke="#fff" stroke-opacity=".15"/><path d="M10 10h24M17 20h17M10 30h24" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+  `;
+
+  const closeBurgerMenu = `
+    <svg id='closeBurgerMenu' width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="44" height="40" rx="10" fill="white" fill-opacity="0.15"/>
+      <rect x="0.5" y="0.5" width="43" height="39" rx="9.5" stroke="white" stroke-opacity="0.15"/>
+      <path d="M14 28.0001L30.9706 11.0296" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      <path d="M14 11.0002L30.9706 27.9708" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  `;
+
+  $('#header-container').append(burgerButton);
+  $('#burgerButton').append(openBurgerMenu);
+
+  const updateBurgerVisibility = () => {
+    const width = document.documentElement.clientWidth;
+    if (width < 1024) {
+      $('#burgerButton')
+        .removeClass('burger-button_visibility_hidden')
+        .addClass('burger-button_visibility_visible');
+    } else {
+      $('#burgerButton')
+        .removeClass('burger-button_visibility_visible')
+        .addClass('burger-button_visibility_hidden');
+
+      $('#navigation').removeClass('active');
+    }
+  };
+
+  $(document).ready(() => {
+    updateBurgerVisibility();
+
+    $('#burgerButton').on('click', () => {
+      $('#navigation').toggleClass('active');
+      const isActive = $('#navigation').hasClass('active');
+
+      if (isActive) {
+        $('#burgerButton').empty().append(closeBurgerMenu);
+      } else {
+        $('#burgerButton').empty().append(openBurgerMenu);
+      }
+    });
+  });
+
+  window.addEventListener('resize', updateBurgerVisibility);
+}
+
 addNavArrow();
 addNavButtonIcon();
 addIndicatorToNavItem();
+addBurgerOnMobileWidth();
 addSocialIconsToFooter();
