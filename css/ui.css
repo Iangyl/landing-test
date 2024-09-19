@@ -123,6 +123,25 @@
   }
 }
 
+@media (min-width: 426px) and (max-width: 1024px) {
+  .nav-list {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+  .nav-list {
+    max-width: 81.176vw;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-list {
+    max-width: 600px;
+  }
+}
+
 @media (max-width: 1024px) {
   .navigation {
     display: none;
