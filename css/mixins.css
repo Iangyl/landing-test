@@ -36,3 +36,13 @@
   flex-wrap: wrap;
   gap: var(--gap);
 }
+
+
+.flex-xCenter-yCenter-wrap-gap,
+.flex-yCenter-xCenter-wrap-gap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}

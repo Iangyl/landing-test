@@ -115,8 +115,16 @@
   display: block;
 }
 
+@media (max-width: 425px) {
+  .nav-list {
+    max-width: 345px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 1024px) {
-  #navigation {
+  .navigation {
     display: none;
     position: absolute;
     top: 70px;

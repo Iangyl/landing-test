@@ -97,7 +97,7 @@ function addSocialIconsToFooter() {
     .append(telegram);
 }
 
-function addBurgerOnMobileWidth() {
+function modifyHeaderDueToDevice() {
   const burgerButton = `
     <button id='burgerButton' class='burger-button flex-xCenter-yCenter burger-button_visibility_hidden'>
     </button>
@@ -155,5 +155,5 @@ function addBurgerOnMobileWidth() {
 addNavArrow();
 addNavButtonIcon();
 addIndicatorToNavItem();
-addBurgerOnMobileWidth();
+modifyHeaderDueToDevice();
 addSocialIconsToFooter();
