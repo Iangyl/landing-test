@@ -158,7 +158,7 @@ function addCrawlway() {
     '<div class="flex-yCenter-gap crawlwayRow-?" style="--gap: 64px"></div>';
 
   const solanaLogo_v2 = `
-    <img src='/assets/pictures/solana_chunk.png' alt='solana' />
+    <img src='/landing-test/assets/pictures/solana_chunk.png' alt='solana' />
   `
 
   $('body')
