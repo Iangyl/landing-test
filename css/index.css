@@ -812,7 +812,7 @@ footer {
   }
 }
 
-@media (max-width: 1800px) {
+@media (min-width: 600px) and (max-width: 1800px) {
   .content-wrapper {
     max-width: 1180px;
   }

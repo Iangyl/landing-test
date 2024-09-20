@@ -121,36 +121,46 @@
 #crawlwayContainer-2 {
   position: absolute;
   overflow: hidden;
-  /* Сховати виходять за межі екрана частини */
   white-space: nowrap;
-  /* Заборонити переноси рядків */
-  display: inline-flex;
-  /* Використовуємо для горизонтальної лінії елементів */
-  animation: scroll 15s linear infinite;
-  /* Анімація руху */
+  z-index: -1;
 }
 
 #crawlwayContainer-1 {
-  transform: rotate(10deg);
+  top: 25%;
+  transform: translateY(-50%) rotate(10deg);
 }
 
 #crawlwayContainer-2 {
-  transform: rotate(-10deg);
+  transform: translateY(50%) rotate(-10deg);
+  bottom: 9%;
+}
+
+.crawlwayRow-1,
+.crawlwayRow-2 {
+  display: inline-flex;
+  animation: scroll 15s linear infinite;
+}
+
+.crawlwayRow-1 {
   animation-direction: reverse;
-  /* Для різних напрямків руху */
+}
+
+.crawlwayRow-1 img,
+.crawlwayRow-2 img {
+  filter: blur(2px);
 }
 
 @keyframes scroll {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .nav-list {
     max-width: 345px;
     width: 100%;
@@ -160,15 +170,25 @@
   .primary-button {
     width: 340px;
   }
+
+  #crawlwayContainer-1 {
+    top: 21%;
+    transform: translateY(-50%) rotate(10deg);
+  }
+  
+  #crawlwayContainer-2 {
+    transform: translateY(50%) rotate(-10deg);
+    bottom: 9%;
+  }
 }
 
-@media (min-width: 426px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1024px) {
   .nav-list {
     margin: 0 auto;
   }
 }
 
-@media (min-width: 426px) and (max-width: 767px) {
+@media (min-width: 601px) and (max-width: 767px) {
   .nav-list {
     max-width: 81.176vw;
   }
@@ -189,7 +209,7 @@
     left: 0;
     right: 0;
     background-color: var(--header-bg-col);
-    padding: 20px;
+    padding: 20px 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
