@@ -2,4 +2,4 @@
 
 ## Explanation
 
-`preview` brunch created to show project on GitHub pages.
+`preview` branch created to show project on GitHub pages.
