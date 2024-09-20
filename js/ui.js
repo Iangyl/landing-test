@@ -152,8 +152,32 @@ function modifyHeaderDueToDevice() {
   window.addEventListener('resize', updateBurgerVisibility);
 }
 
+function addCrawlway() {
+  const crawlwayContainer = '<div id="crawlwayContainer-?"></div>';
+  const crawlwayRow =
+    '<div id="crawlwayRow-?" class="flex-yCenter-gap" style="--gap: 64px"></div>';
+  const solanaLogo = `
+    <svg width="90" height="80" viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M89.533 63.074 74.676 78.907A3.4 3.4 0 0 1 72.16 80H1.731a1.75 1.75 0 0 1-1.587-1.033 1.7 1.7 0 0 1-.119-.974c.06-.331.212-.638.44-.885l14.839-15.833a3.4 3.4 0 0 1 2.516-1.093h70.429a1.702 1.702 0 0 1 1.724 1.998 1.7 1.7 0 0 1-.448.885zm-14.86-31.891a3.54 3.54 0 0 0-2.516-1.093H1.731a1.75 1.75 0 0 0-1.587 1.036 1.7 1.7 0 0 0-.119.974c.06.333.211.633.44.882l14.839 15.842c.317.341.712.617 1.14.802.435.19.898.282 1.376.29h70.429a1.7 1.7 0 0 0 1.57-1.033 1.69 1.69 0 0 0-.321-1.85L74.664 31.191zM1.728 19.81h70.43c.473-.003.94-.1 1.376-.285.436-.19.822-.458 1.14-.808L89.535 2.884A1.72 1.72 0 0 0 89.22.268 1.7 1.7 0 0 0 88.26 0H17.82c-.47 0-.94.1-1.377.282a3.3 3.3 0 0 0-1.14.81L.465 16.926a1.73 1.73 0 0 0-.32 1.856 1.75 1.75 0 0 0 1.584 1.034z" fill="url(#a)"/><defs><linearGradient id="a" x1="7.599" y1="81.906" x2="80.944" y2="-1.286" gradientUnits="userSpaceOnUse"><stop offset=".08" stop-color="#9945FF"/><stop offset=".3" stop-color="#8752F3"/><stop offset=".5" stop-color="#5497D5"/><stop offset=".6" stop-color="#43B4CA"/><stop offset=".72" stop-color="#28E0B9"/><stop offset=".97" stop-color="#19FB9B"/></linearGradient></defs></svg>
+  `;
+
+  $('body')
+    .append(crawlwayContainer.replace('?', '1'))
+    .append(crawlwayContainer.replace('?', '2'));
+
+  $('#crawlwayContainer-1').append(crawlwayRow.replace('?', '1'));
+  $('#crawlwayContainer-2').append(crawlwayRow.replace('?', '2'));
+
+  const quantity = 13;
+
+  for (let i = 0; i < quantity; i++) {
+    $('#crawlwayRow-1').append(solanaLogo);
+    $('#crawlwayRow-2').append(solanaLogo);
+  }
+}
+
 addNavArrow();
 addNavButtonIcon();
 addIndicatorToNavItem();
+//addCrawlway();
 modifyHeaderDueToDevice();
 addSocialIconsToFooter();
