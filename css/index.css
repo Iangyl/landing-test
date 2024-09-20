@@ -140,7 +140,6 @@ ul {
 .invocation-block p {
   font-size: 1.375rem;
   line-height: 33px;
-  letter-spacing: -2px;
   text-align: center;
 }
 
@@ -359,7 +358,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.why-us .description {
+.description {
   margin-bottom: 50px;
   color: var(--secondary-col);
   font-size: 1.375rem;
@@ -458,28 +457,381 @@ footer {
   margin-top: 20px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .content-wrapper {
-    max-width: 360px;
+    max-width: 340px;
+  }
+
+  .invocation-block {
+    max-width: 340px;
+  }
+
+  .invocation-block h1 {
+    font-size: 2.375rem;
+    line-height: 45.6px;
+  }
+
+  .invocation-block p {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+
+  .solana-logo {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    bottom: -9%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .about {
+    margin-bottom: 347px;
+  }
+
+  .about__pic-container {
+    width: 97.222vw;
+    height: auto;
+    margin-top: 450px;
+  }
+
+  .about__pic-container img {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2.375rem;
+    line-height: 45.6px;
+  }
+
+  h3 {
+    font-size: 1.625rem;
+    line-height: 31.2px;
+  }
+
+  .about__text-container p {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+
+  .advantages-item-container p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  .description {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+
+  .why-us-item-container {
+    padding: 20px !important;
+    height: auto !important;
+  }
+
+  .why-us-item-container:last-of-type p {
+    height: auto !important;
+  }
+
+  .why-us-item-title {
+    margin-bottom: 15px;
+  }
+
+  .why-us-item-container p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  .stake-item-container h2 {
+    font-size: 2.375rem;
+    line-height: 45.6px;
+  }
+
+  .stake-item-container p {
+    font-size: 1.25rem;
+    line-height: 30px;
   }
 }
 
-@media (min-width: 426px) and (max-width: 767px) {
+@media (min-width: 600px) and (max-width: 768px) {
   .content-wrapper {
-    max-width: 84.706vw;
+    max-width: 580px;
+  }
+
+  .invocation-block {
+    max-width: 560px;
+  }
+
+  .invocation-block h1 {
+    font-size: 2.375rem;
+    line-height: 45.6px;
+  }
+
+  .invocation-block p {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+
+  .solana-logo {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    bottom: -9%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .about {
+    margin-bottom: 447px;
+  }
+
+  .about__pic-container {
+    width: 97.222vw;
+    height: auto;
+    margin-top: 450px;
+  }
+
+  .about__pic-container img {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2.375rem;
+    line-height: 45.6px;
+  }
+
+  h3 {
+    font-size: 1.625rem;
+    line-height: 31.2px;
+  }
+
+  .about__text-container p {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+
+  .advantages-item-container p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  .description {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+
+  .why-us-item-container {
+    padding: 20px !important;
+    height: auto !important;
+  }
+
+  .why-us-item-container:last-of-type p {
+    height: auto !important;
+  }
+
+  .why-us-item-title {
+    margin-bottom: 15px;
+  }
+
+  .why-us-item-container p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  .stake-item-container h2 {
+    font-size: 2.375rem;
+    line-height: 45.6px;
+  }
+
+  .stake-item-container p {
+    font-size: 1.25rem;
+    line-height: 30px;
   }
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 991px) {
   .content-wrapper {
-    max-width: 720px;
+    max-width: 728px;
+  }
+
+  .invocation-block {
+    max-width: 708px;
+  }
+
+  .invocation-block h1 {
+    font-size: 4.25rem;
+    line-height: 81.6px;
+  }
+
+  .invocation-block p {
+    font-size: 1.375rem;
+    line-height: 33px;
+  }
+
+  .solana-logo {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    bottom: -9%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .about {
+    margin-bottom: 647px;
+  }
+
+  .about__pic-container {
+    width: 97.222vw;
+    height: auto;
+    margin-top: 550px;
+  }
+
+  .about__pic-container img {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 57.6px;
+    letter-spacing: -2px;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 33.6px;
+    margin: 0;
+  }
+
+  p {
+    line-height: 27px;
+  }
+
+  .about__text-container p {
+    font-size: 1.375rem;
+    line-height: 33px;
+  }
+
+  .advantages-item-container p {
+    font-size: 1.125rem;
+    line-height: 27px;
+  }
+
+  .description {
+    font-size: 1.375rem;
+    line-height: 33px;
+  }
+
+  .why-us-item-container {
+    max-width: 100% !important;
+    padding: 20px !important;
+    height: auto !important;
+  }
+
+  .why-us-item-container:last-of-type p {
+    height: auto !important;
+  }
+
+  .why-us-item-title {
+    margin-bottom: 15px;
+  }
+
+  .why-us-item-container p {
+    font-size: 1.125rem;
+    line-height: 27px;
+  }
+
+  .stake-item-container h2 {
+    font-size: 4.25rem;
+    line-height: 81.6px;
+  }
+
+  .stake-item-container p {
+    font-size: 1.375rem;
+    line-height: 33px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1100px) {
+  .content-wrapper {
+    max-width: 900px;
+  }
+
+  .invocation-block {
+    max-width: 880px;
+  }
+
+  .solana-logo {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    bottom: -9%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .about {
+    margin-bottom: 647px;
+  }
+
+  .about__pic-container {
+    max-width: 950px;
+    width: 97.222vw;
+    height: auto;
+    margin-top: 550px;
+  }
+
+  .about__pic-container img {
+    width: 100%;
+  }
+
+  .why-us-item-container {
+    max-width: 100% !important;
+    padding: 20px !important;
+    height: auto !important;
+  }
+
+  .why-us-item-container:last-of-type p {
+    height: auto !important;
+  }
+
+  .why-us-item-title {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1280px) {
   .logo {
     max-width: 134.4px;
     width: 37.333vw;
+  }
+}
+
+@media (max-width: 1800px) {
+  .content-wrapper {
+    max-width: 1180px;
+  }
+
+  .invocation-block {
+    max-width: 980px;
+  }
+
+  .about__pic-container {
+    max-width: 950px;
+    width: 97.222vw;
+    height: auto;
+    margin-top: 550px;
+  }
+
+  .about__pic-container img {
+    width: 100%;
+  }
+
+  .about {
+    margin-bottom: 587px;
   }
 }

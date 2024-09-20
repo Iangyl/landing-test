@@ -121,6 +121,10 @@
     width: 100%;
     margin: 0 auto;
   }
+
+  .primary-button {
+    width: 340px;
+  }
 }
 
 @media (min-width: 426px) and (max-width: 1024px) {
